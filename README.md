@@ -9,7 +9,7 @@
 
 | 운영체제 | 파일 | 지원 |
 | --- | --- | --- |
-| macOS | [**Yeopjari-mac.dmg**](https://github.com/sendtoyj00/yeopjari-download/releases/latest/download/Yeopjari-mac.dmg) | macOS 11 이상 (Apple Silicon·Intel) |
+| macOS | [**Yeopjari-mac.dmg**](https://github.com/sendtoyj00/yeopjari-download/releases/latest/download/Yeopjari-mac.dmg) | macOS 11 이상 · Apple Silicon(M1 이후) 맥 (인텔 맥은 아직 지원하지 않아요) |
 | Windows | [**Yeopjari-Setup.exe**](https://github.com/sendtoyj00/yeopjari-download/releases/latest/download/Yeopjari-Setup.exe) | Windows 10 · 11 (64비트) |
 
 지난 버전과 바뀐 점은 [릴리스 페이지](https://github.com/sendtoyj00/yeopjari-download/releases)에서 볼 수 있어요.
@@ -135,6 +135,12 @@
 관계·대사 빈도·컨셉·효과는 **설정 → 기능 → 페어**에서 정해요.
 
 ![페어 짝꿍](images/qa_pair_partner.png)
+</details>
+
+<details>
+<summary><b>인텔 맥에서 열리지 않아요</b></summary>
+
+지금은 애플 실리콘(M1 이후) 맥만 지원해요. 인텔 맥 지원은 준비 중이에요.
 </details>
 
 <details>
