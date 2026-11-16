@@ -7,13 +7,15 @@
 
 ## 다운로드 (최신 버전)
 
-| 운영체제 | 파일 | 지원 |
-| --- | --- | --- |
-| macOS | [**Yeopjari-mac.dmg**](https://github.com/sendtoyj00/yeopjari-download/releases/latest/download/Yeopjari-mac.dmg) | macOS 11 이상 · Apple Silicon(M1 이후) 맥 |
-| Windows | [**Yeopjari-Setup.exe**](https://github.com/sendtoyj00/yeopjari-download/releases/latest/download/Yeopjari-Setup.exe) | Windows 10 · 11 (64비트) |
+| 운영체제 | AI 있는 판 | AI 없는 판 (대사 직접 입력) | 지원 |
+| --- | --- | --- | --- |
+| macOS | [**Yeopjari-mac.dmg**](https://github.com/sendtoyj00/yeopjari-download/releases/latest/download/Yeopjari-mac.dmg) | [Yeopjari-mac-noai.dmg](https://github.com/sendtoyj00/yeopjari-download/releases/latest/download/Yeopjari-mac-noai.dmg) | macOS 11 이상 · Apple Silicon(M1 이후) 맥 |
+| Windows | [**Yeopjari-Setup.exe**](https://github.com/sendtoyj00/yeopjari-download/releases/latest/download/Yeopjari-Setup.exe) | [Yeopjari-Setup-noai.exe](https://github.com/sendtoyj00/yeopjari-download/releases/latest/download/Yeopjari-Setup-noai.exe) | Windows 10 · 11 (64비트) |
 
+- **AI 없는 판**은 AI 대사·AI 멤버 대화·가사 AI 번역을 뺀 판이에요. 대사는 직접 써서 넣어요. 그 밖의 기능은 똑같아요.
+- 라이선스 키는 두 판이 같아요. 체험판과 정식판도 같은 설치 파일이고, 정식판 라이선스 키는 판매처에서 살 수 있어요.
 - 위 링크는 늘 최신 버전을 받아요. 버전 번호와 SHA256 체크섬은 [릴리스 페이지](https://github.com/sendtoyj00/yeopjari-download/releases/latest)에서 볼 수 있어요.
-- 체험판과 정식판은 같은 설치 파일이에요. 정식판 라이선스 키는 판매처에서 살 수 있어요.
+- 📖 처음부터 끝까지 자세한 사용법은 **[사용 설명서](MANUAL.md)**에 있어요.
 
 ---
 
@@ -43,6 +45,11 @@
 넣은 그림의 상태만 바꾸는 것(옮기기·서로 바꾸기·다른 상태에도 쓰기)도 클릭 한 번이면 돼요. *(정식판: 상태별 8장 · 캐릭터 여러 명)*
 ![캐릭터 설정](images/07_settings_character.png)
 
+### 꾸미기
+모자·리본·안경 같은 그림을 캐릭터에 얹어요. 설정 → **꾸미기** 탭의 미리 보기에서 끌어서 자리를 정하고, 휠로 크기를 바꿔요.
+기울기, 캐릭터 앞/뒤도 정할 수 있어요. 모든 표정과 몸짓에 같이 붙어 다녀요. *(체험판 1개 · 정식판 캐릭터마다 10개)*
+![꾸미기 탭](images/12_decor_tab.png)
+
 ### 그룹 — 여러 캐릭터와 함께 *(정식판)*
 뼈다귀를 멘 강아지 같은 멤버를 옆에 두면 함께 반응해요. 멤버마다 관계(친구·연인·라이벌·가족)와 성격을 정할 수 있어요.
 관계에 따라 주고받는 대사가 달라지고, 멤버별 말풍선과 효과도 따로 정할 수 있어요.
@@ -53,7 +60,10 @@
 한 주 동안 얼마나 했는지, 가장 많이 한 과목, 연속 기록을 카드 한 장으로 정리해 줘요. 일별 차트와 과목별 합계도 볼 수 있어요.
 ![주간 리포트](images/06_report.png)
 
-### AI 대사 *(정식판)*
+### 대사는 직접 쓰거나, AI에게
+상황마다(집중 시작·완료·클릭·쓰다듬기 등) 캐릭터가 할 말을 직접 써 넣을 수 있어요. `{분}`·`{과목}` 같은 변수도 쓸 수 있어요.
+
+### AI 대사 *(정식판 · AI 있는 판)*
 AI가 적어 둔 성격과 말투에 맞춰 대사를 만들어 줘요. 쓸 수 있는 AI는 세 가지예요.
 - **Gemini** (무료 키 가능)
 - **Claude** (내 API 키)
@@ -87,7 +97,8 @@ Claude Code나 Codex에게 일을 맡겨 두면, 캐릭터가 작업마다 **시
 | 주간 리포트 | 워터마크 | 깔끔하게 |
 | 작업 앱 구분 | — | ○ |
 | 할 일 태그 · D-day | 3개 · 1개 | 무제한 |
-| 그룹 · AI 대사 · 가사 AI 번역 | — | ○ |
+| 꾸미기 | 캐릭터마다 1개 | 캐릭터마다 10개 |
+| 그룹 · AI 대사 · 가사 AI 번역 | — | ○ (AI 대사·번역은 AI 있는 판) |
 | 타이머 · 쉬는 시간 놀이 · 음악 따라 말하기 · AI 작업 알림 | ○ | ○ |
 
 체험판에서 쌓은 기록과 경험치는 정식판이 되어도 그대로 이어져요.
@@ -100,12 +111,12 @@ Claude Code나 Codex에게 일을 맡겨 두면, 캐릭터가 작업마다 **시
 1. `Yeopjari-mac.dmg`를 열고 **옆자리**를 **응용 프로그램** 폴더로 끌어다 놓아요.
 2. 처음 열 때 "확인되지 않은 개발자" 안내가 뜨면, 응용 프로그램 폴더에서 옆자리를 **우클릭 → 열기 → 열기**로 열어요.
    (또는 시스템 설정 → 개인정보 보호 및 보안 → 아래쪽의 **그래도 열기**)
-3. 화면 위 메뉴 막대의 고양이 아이콘에서 설정·숨기기·종료를 할 수 있어요.
+3. 화면 위 메뉴 막대의 고양이 아이콘에서 설정·숨기기·종료를 할 수 있어요. 캐릭터에 마우스를 올리면 나오는 **⚙ 버튼**으로도 설정을 열어요.
 
 **Windows**
 1. `Yeopjari-Setup.exe`를 실행해요.
 2. "Windows의 PC 보호" 창이 뜨면 **추가 정보 → 실행**을 눌러요.
-3. 작업 표시줄 오른쪽 아래의 고양이 아이콘에서 설정·숨기기·종료를 할 수 있어요.
+3. 작업 표시줄 오른쪽 아래의 고양이 아이콘에서 설정·숨기기·종료를 할 수 있어요. 캐릭터에 마우스를 올리면 나오는 **⚙ 버튼**으로도 설정을 열어요.
 
 **업데이트**: 새 버전을 받아 같은 방법으로 덮어 설치하면 돼요. 캐릭터·기록·라이선스는 그대로 남아요.
 
@@ -114,9 +125,22 @@ Claude Code나 Codex에게 일을 맡겨 두면, 캐릭터가 작업마다 **시
 ## Q&A
 
 <details>
+<summary><b>AI 있는 판과 AI 없는 판, 뭘 받아야 하나요?</b></summary>
+
+AI로 대사를 만들 생각이 없으면 **AI 없는 판**을 받으세요. 설정이 더 단순해요. 라이선스 키는 같아서 나중에 다른 판으로 바꿔 설치해도 돼요 (캐릭터·기록·라이선스는 그대로 남아요).
+</details>
+
+<details>
+<summary><b>설정은 어떻게 여나요? ⚙ 버튼이 안 보여요</b></summary>
+
+캐릭터에 마우스를 올리면 오른쪽 위에 **⚙**가 나와요. 캐릭터 우클릭이나 메뉴 막대·작업 표시줄 아이콘으로도 열 수 있어요.
+**설정 → 캐릭터 → 움직임과 소리 → 설정 버튼 ⚙**에서 '항상 보이기'나 '안 보이기'로 바꿀 수 있어요.
+</details>
+
+<details>
 <summary><b>라이선스 키는 어디에 넣나요?</b></summary>
 
-캐릭터를 우클릭하거나(또는 메뉴 막대·작업 표시줄 아이콘) **설정 → 라이선스** 탭을 열어요. 키를 붙여 넣고 **적용**을 누르면 바로 정식판으로 바뀌어요.
+캐릭터의 ⚙ 버튼이나 우클릭(또는 메뉴 막대·작업 표시줄 아이콘)으로 **설정 → 라이선스** 탭을 열어요. 키를 붙여 넣고 **적용**을 누르면 바로 정식판으로 바뀌어요.
 
 ![라이선스 입력](images/qa_license.png)
 
